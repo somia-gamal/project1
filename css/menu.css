@@ -1,0 +1,373 @@
+/*start global*/
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 4300px
+}
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    margin-top: 0
+}
+h1, h2, h3, h4, h5, h6, p 
+{
+    margin: 0;
+    padding: 0;
+}
+ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0
+}
+a
+{
+    text-decoration: none
+}
+.container
+{
+    width: 1200px;
+    margin: auto
+}
+.clearfix
+{
+    clear:both
+}
+.loading
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: white
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 300px  auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/*scrolltotop*/
+#scrollToTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color:#383838;
+    padding: 20px ;
+    border-radius:5px;
+    color:#fff;
+    z-index: 99999;
+    display: none;
+}
+/*scrolltotop*/
+/*end global*/
+/*start header*/
+/*start navbar*/
+.header
+{
+    background-image: url(../../project1/images/menu-slide1.jpg);
+    background-size:cover;
+    height: 100vh;
+    background-attachment: fixed
+}
+.hvr-underline-from-center{
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition: a11 .5s ease-in-out;
+    transition-property: transform;
+    
+}
+
+.hvr-underline-from-center:hover,
+.hvr-underline-from-center:focus,
+.hvr-underline-from-center:active {
+    transform: scale(1);
+}
+.header .navbar .links ul li
+{
+    margin-left:25px;
+    padding: 20px;
+    margin-top: 30px
+}
+.header .navbar .links ul li a
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 700
+    
+}
+.header .navbar .links .unique
+{
+    font-size: 30px;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 40px
+    
+}
+/*end navbar*/
+/*start intro*/
+.header .intro
+{
+    text-align: center;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 200px
+}
+
+.header .intro h1
+{
+    background-color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+    margin-left: 150px;
+    font-style: normal;
+    font-size: 40px;
+    color: #252525;
+    height: 80px;
+    width: 50%;
+    padding: 15px
+}
+.header .intro p
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px
+}
+.header .intro button
+{
+    border: 1px solid white;
+    background-color: transparent;
+    height: 40px;
+    width: 150px
+    
+}
+.header .intro button:hover
+{
+    background-color: white;
+    color: black;
+    transition: all .5s ease-in-out
+}
+
+.header .intro button 
+{
+    color: white;
+    font-weight: 600;
+    font-size: 15px
+}
+/*end intro*/
+/*end header*/
+/*start content one*/
+.breakfast .break
+{
+    float: left;
+    width: 50%;
+    margin-bottom: 100px
+}
+.breakfast  h1
+{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+.breakfast .break span
+{
+    border: 1px solid orange;
+    color: white;
+    background-color: orange
+}
+.breakfast .break p
+{
+    color: #626262
+}
+
+/*end content one*/
+/*start content two*/
+.two
+{
+    background-image: url(../images/menu-parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px
+}
+.two .lunch
+{
+    padding-top: 100px
+}
+.two .lunch h1
+{
+    background-color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+    margin-left: 300px;
+    font-style: normal;
+    font-size: 50px;
+    color: #252525;
+    height: 90px;
+    width:50%;
+    padding: 20px;
+    text-align: center
+    
+}
+.two .lunch p
+{
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: white
+}
+/*end content two*/
+/*start content three*/
+.three .dinner
+{
+    float: left;
+    width: 50%;
+    margin-bottom: 100px
+}
+.three .dinner span,.five .desert span
+{
+    border: 1px solid orange;
+    color: white;
+    background-color: orange
+}
+.three .dinner p,.five .desert p
+{
+    color: #626262
+}
+.three  h1,.five h1
+{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+/*end content three*/
+/*start content four*/
+.four
+{
+    background-image: url(../images/menu-parallax2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px
+}
+.four .sweet
+{
+    padding-top: 100px
+}
+.four .sweet h1
+{
+    background-color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+    margin-left: 300px;
+    font-style: normal;
+    font-size: 50px;
+    color: #252525;
+    height: 90px;
+    width:50%;
+    padding: 20px;
+    text-align: center  
+}
+.four .sweet p
+{
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: white
+}
+/*end content four*/
+/*start content five*/
+.five .desert
+{
+    float: left;
+    width: 50%
+}
+.five .desert 
+{
+    margin-bottom: 100px
+}
+/*end content five*/
+/*start content six*/
+.contact
+{
+    background-color: #252525;
+    height: 300px
+}
+.contact .talk
+{
+    float: left;
+    width: 30%;
+    padding-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px
+
+}
+.contact .talk h4
+{
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px
+}
+.contact .talk p
+{
+    text-align: center;
+    color: #9e9e9e;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400
+}
+/*end content six*/

@@ -1,0 +1,555 @@
+/*start global*/
+html, body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 4000px
+}
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    margin-top: 0
+}
+h1, h2, h3, h4, h5, h6, p 
+{
+    margin: 0;
+    padding: 0;
+}
+ul li
+{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+a
+{
+    text-decoration: none
+}
+.container
+{
+    width: 1200px;
+    margin: auto
+}
+.clearfix
+{
+    clear:both
+}
+.loading
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: white
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 300px  auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/*scrolltotop*/
+#scrollToTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color:#383838;
+    padding: 20px ;
+    border-radius:5px;
+    color:#fff;
+    z-index: 99999;
+    display: none;
+}
+/*scrolltotop*/
+/*end global*/
+/*start header*/
+/*start navbar*/
+.header
+{
+    background-image: url(../../project1/images/main-image.jpg);
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed
+}
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition: a11 .5s ease-in-out;
+    transition-property: transform;
+    
+}
+
+.hvr-underline-from-center:hover,
+.hvr-underline-from-center:focus,
+.hvr-underline-from-center:active {
+    transform: scale(1);
+}
+
+.header .navbar .links ul li
+{
+    
+    display: inline-block;
+}
+.header .navbar .links ul li
+{
+    margin-left:25px;
+    padding: 20px;
+    margin-top: 30px
+}
+.header .navbar .links ul li a
+{
+    color: black;
+    font-size: 15px;
+    font-weight: 700
+    
+}
+.header .navbar .links .unique
+{
+    font-size: 30px;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 40px
+    
+}
+/*end navbar*/
+/*start intro*/
+.header .intro,.two .gallery,.four .view 
+{
+    text-align: center;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 200px;
+    transition: all .5s ease-in-out
+}
+
+.header .intro h1,.two .gallery h1,.four .view h1
+{
+    background-color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-size: 40px;
+    color: #252525;
+    height: 80px;
+    padding: 15px
+}
+
+
+.header .intro p,.two .gallery p,.four .view p
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px
+}
+.header .intro button,.two .gallery button,.four .view button
+{
+    border: 1px solid white;
+    background-color: transparent;
+    height: 40px;
+    width: 220px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px
+    
+}
+.header .intro button:hover
+{
+    background-color: white;
+    color: black;
+    transition: all .5s ease-in-out
+}
+/*end intro*/
+/*end header*/
+/*start content one*/
+.one
+{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+.one p
+{
+    color: #676767;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 33px;
+    width: 80%;
+    margin-left: 100px
+}
+/*end content one*/
+/*start content two*/
+.two
+{
+    background-image: url(../images/Parallax-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px
+}
+.two .gallery
+{
+    text-align: center;
+    margin-top: 0;
+    margin-left: 300px;
+    padding-top: 100px
+}
+.two .gallery button:hover
+{
+    background-color: white;
+    color: black;
+    transition: all .5s ease-in-out
+}
+/*end content two*/
+/*start content three*/
+.three .col
+{
+    float: left;
+    width: 50%
+}
+.three h1
+{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+.three .col span
+{
+    border: 1px solid orange;
+    color: white;
+    background-color: orange
+}
+/*end content three*/
+/*start content four*/
+.four
+{
+    background-image: url(../../project1/images/Parallax-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px
+}
+.four .view button:hover
+{
+    background-color: white;
+    color: black;
+    transition: all .5s ease-in-out
+}
+.four .view 
+{
+    padding-top: 100px
+}
+/*end content four*/
+/*start content five*/
+.five .row,.six .column
+{
+    float: left;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-bottom: 100px
+}
+.five .row img,.six .column img
+{
+    width: 300px;
+    height: 400px
+}
+.five .row p,.six .column p
+{
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    color: #676767;
+}
+.five .row h3,.six .column h3
+{
+    font-size: 24px;
+    line-height: 39px;
+    font-weight: 600;
+}
+/*end content five*/
+/*start content six*/
+.six
+{
+    background-image: url(../../project1/images/Parallax-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px
+}
+
+/*end content six*/
+/*start content seven*/
+.seven
+{
+    background-color: #383838;
+    height: 145px;
+    text-align: center
+}
+.seven  p
+{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 50px
+    
+}
+/*end content seven*/
+/*start content eight*/
+.contact
+{
+    background-color: #252525;
+    height: 300px
+}
+.contact .talk
+{
+    float: left;
+    width: 30%;
+    padding-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px
+
+}
+.contact .talk h4
+{
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px
+}
+.contact .talk p
+{
+    text-align: center;
+    color: #9e9e9e;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400
+}
+/*end content eight*/
+/*start media for mobile*/
+@media(max-width:767px){
+    .header .navbar .links ul li{
+        display: block;
+        margin: 0
+    }
+    .header .navbar .links .unique{
+        font-size: 15px;
+        margin-left: 0
+    }
+    .header .navbar .links ul li{
+    margin-left:0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px
+}
+   .header .intro h1, .two .gallery h1, .four .view h1{
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-size: 15px;
+    height: 50px
+        
+        
+    }
+    .header .intro,.two .gallery,.four .view {
+    text-align: center;
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 100px;
+    
+}
+    .header .intro p, .two .gallery p, .four .view p{
+        font-size: 15px;
+        font-weight: 500
+        
+    }
+    .header .intro button, .two .gallery button, .four .view button{
+    width: 150px;
+    font-weight: 500;
+    font-size: 12px;
+}
+    .one p{
+    font-size: 14px;
+    font-weight:500;
+    width:20%;
+    margin-left: 30px
+}
+    .one h1,.three h1{
+        font-size: 15px;
+        margin-left: 30px;
+        width: 20%
+    }
+    .three .col{
+        float: none;
+        width: 20%;
+        margin-bottom: 20px
+    }
+    .three .col h4{
+        font-size: 12px  
+    }
+    .five .row img, .six .column img{
+        width: 250px
+    }
+    .three .col p{
+        font-size: 12px
+    }
+    .five .row,.six .column{
+    float: none;
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px
+}
+    .six{
+    background-image: url(../../project1/images/Parallax-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1500px
+}
+    .contact .talk{
+    float: none;
+    width: 20%;
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px
+
+}
+    .seven {
+    text-align: left;
+}
+    .seven p {
+    font-size: 15px;
+    margin-left: 20px
+}
+    .contact{
+    height: 550px
+}
+    #scrollToTop {
+    right: 20px;
+    bottom: 20px
+}
+ 
+}
+/*end media for mobile*/
+/*start media for tablet*/
+@media(min-width:768px) and (max-width:991px){
+    .header .navbar .links ul li{
+    margin-left:0;
+    padding: 10px;
+}
+    .header .navbar .links ul li a{
+    font-size: 15px;
+    font-weight: 700
+    
+}
+    .header .navbar .links .unique{
+    font-size: 20px;
+    font-weight:700;
+    margin-left: 20px
+    
+}
+    .header .intro, .two .gallery, .four .view {
+    margin-left: 100px
+    }
+    .one p {
+    line-height: 33px;
+    width: 50%;
+    margin-left: 70px;
+}
+    .one h1{
+        text-align: left;
+        margin-left: 170px
+    }
+    .three h1 {
+    text-align: left;
+    margin-left: 170px
+}
+    .three .col {
+    float: none;
+    width: 100%;
+    margin-left: 100px;
+    margin-bottom: 50px
+}
+    .five .row{
+        float: none;
+        width: 50%;
+        text-align: center
+    }
+    .five .row,.six .column{
+    float: none;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 50px
+}
+    .six{
+    background-image: url(../../project1/images/Parallax-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1300px
+}
+
+    .seven p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 200px
+}
+    .contact .talk {
+    float: none;
+    width: 50%;
+    text-align: center
+}
+    .contact{
+        height: 800px
+    }
+}
+/*end media for tablet*/
